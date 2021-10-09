@@ -4,7 +4,7 @@
   "description": "CIMonitor is a place where all your CI statuses come together. Check if all tests have passed, and if deployments are successful. All in one overview.",
   "main": "backend/server.js",
   "scripts": {
-      "test": "echo \"Error: no test specified\" && exit 1", 
+      "test": "echo \"Error: no test specified\" && exit 1",
       "lint-fix": "eslint . --fix --ext .js,.vue,.json"
   },
   "repository": {
