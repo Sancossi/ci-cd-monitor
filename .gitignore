@@ -1,0 +1,14 @@
+/.idea/
+/cypress/videos/
+/cypress/screenshots/
+/dashboard/
+/node_modules/
+/logs/
+/config/saved-statuses.json
+/config/config.json
+/Dockerfile
+/.dockerignore
+/docker-compose.yml
+/yarn-error.log
+
+.env
