@@ -2,7 +2,6 @@
   "env": {
     "amd": true,
     "node": true,
-    "cypress/globals": true,
     "jest/globals": true
   },
   "extends": [
@@ -15,7 +14,7 @@
     "ecmaVersion": 2018,
     "sourceType": "module"
   },
-  "plugins": ["cypress", "jest", "json", "prettier", "vue"],
+  "plugins": ["jest", "json", "prettier", "vue"],
   "rules": {
     "prettier/prettier": "error",
     "vue/html-indent": [
