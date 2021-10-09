@@ -1,55 +1,55 @@
 {
-  "name": "ci-cd-monitor",
-  "version": "1.0.0",
-  "description": "CIMonitor is a place where all your CI statuses come together. Check if all tests have passed, and if deployments are successful. All in one overview.",
-  "main": "backend/server.js",
-  "scripts": {
-      "test": "echo \"Error: no test specified\" && exit 1",
-      "lint-fix": "eslint . --fix --ext .js,.vue,.json"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Sancossi/ci-cd-monitor.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Sancossi/ci-cd-monitor/issues"
-  },
-  "homepage": "https://github.com/Sancossi/ci-cd-monitor#readme",
-  "devDependencies": {
-    "browser-sync": "^2.26.7",
-    "browser-sync-webpack-plugin": "^2.2.2",
-    "eslint": "^6.1.0",
-    "eslint-config-prettier": "^6.0.0",
-    "eslint-plugin-jest": "^22.14.0",
-    "eslint-plugin-json": "^1.4.0",
-    "eslint-plugin-prettier": "^3.1.0",
-    "eslint-plugin-vue": "^5.2.3",
-    "husky": "^3.0.1",
-    "jest": "^24.8.0",
-    "lint-staged": "^9.2.1",
-    "nodemon": "^2.0.2"
-  },
-  "dependencies": {
-    "axios": "^0.22.0",
-    "express": "^4.17.1",
-    "socket.io": "^4.2.0"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
+    "name": "ci-cd-monitor",
+    "version": "1.0.0",
+    "description": "CIMonitor is a place where all your CI statuses come together. Check if all tests have passed, and if deployments are successful. All in one overview.",
+    "main": "backend/server.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "lint-fix": "eslint . --fix --ext .js,.vue,.json"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Sancossi/ci-cd-monitor.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/Sancossi/ci-cd-monitor/issues"
+    },
+    "homepage": "https://github.com/Sancossi/ci-cd-monitor#readme",
+    "devDependencies": {
+        "browser-sync": "^2.26.7",
+        "browser-sync-webpack-plugin": "^2.2.2",
+        "eslint": "^6.1.0",
+        "eslint-config-prettier": "^6.0.0",
+        "eslint-plugin-jest": "^22.14.0",
+        "eslint-plugin-json": "^1.4.0",
+        "eslint-plugin-prettier": "^3.1.0",
+        "eslint-plugin-vue": "^5.2.3",
+        "husky": "^3.0.1",
+        "jest": "^24.8.0",
+        "lint-staged": "^9.2.1",
+        "nodemon": "^2.0.2"
+    },
+    "dependencies": {
+        "axios": "^0.22.0",
+        "express": "^4.17.1",
+        "socket.io": "^4.2.0"
+    },
+    "husky": {
+        "hooks": {
+            "pre-commit": "lint-staged"
+        }
+    },
+    "lint-staged": {
+        "*.{js,json,vue}": [
+            "eslint . --fix --ext .js,.vue,.json",
+            "git add"
+        ]
+    },
+    "jest": {
+        "testMatch": [
+            "**/?(*.)test.js?(x)"
+        ]
     }
-  },
-  "lint-staged": {
-    "*.{js,json,vue}": [
-      "eslint . --fix --ext .js,.vue,.json",
-      "git add"
-    ]
-  },
-  "jest": {
-    "testMatch": [
-      "**/?(*.)test.js?(x)"
-    ]
-  }
 }
